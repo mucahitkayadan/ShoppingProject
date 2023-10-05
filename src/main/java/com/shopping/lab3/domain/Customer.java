@@ -3,6 +3,7 @@ package com.shopping.lab3.domain;
 import java.util.List;
 
 public class Customer {
+    private long id;
     private String customerNumber;
     private String firstName;
     private String lastName;
@@ -12,8 +13,8 @@ public class Customer {
     private List<CreditCard> creditCards;
     private List<Order> orders;
 
-    public Customer(String customerNumber) {
-        this.customerNumber = customerNumber;
+    public Customer(int id) {
+        this.id = id;
     }
 
     public String getCustomerNumber() {
@@ -81,5 +82,13 @@ public class Customer {
     }
     public String getFullName(){
         return firstName + " " + lastName;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
