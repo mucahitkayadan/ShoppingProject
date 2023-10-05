@@ -1,6 +1,7 @@
 package com.shopping.lab3.repository;
 
 import com.shopping.lab3.domain.Customer;
+import com.shopping.lab3.domain.Order;
 import com.shopping.lab3.domain.Product;
 import org.springframework.stereotype.Repository;
 
@@ -8,19 +9,18 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-@Repository
-public class CustomerRepository {
-    Map<String, Customer> customers = new HashMap<>();
+public class ShoppingCartRepository {
+    Map<String, Order> orders = new HashMap<>();
 
-    public Collection<Product> findAllCustomers() {
+    public Collection<Order> findAllOrders() {
         return null;
     }
 
-    public void addCustomer(Customer customer) {
+    public void addOrder(Order order) {
 
     }
 
-    public void removeCustomer(Customer customer) {
+    public void removeOrder(Order order) {
 
     }
 }

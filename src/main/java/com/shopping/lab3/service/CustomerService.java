@@ -1,11 +1,13 @@
 package com.shopping.lab3.service;
 
 import com.shopping.lab3.domain.Customer;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@Service
 public class CustomerService {
     private List<Customer> customers;
 

@@ -1,8 +1,26 @@
 package com.shopping.lab3.repository;
 
 import com.shopping.lab3.domain.Product;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
-    // Additional custom query methods can be defined here if needed
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
+@Repository
+public class ProductRepository {
+   Map<String, Product> products = new HashMap<>();
+
+   public Collection<Product> findAllProducts() {
+       return null;
+   }
+
+   public void addProduct(Product product) {
+
+   }
+
+    public void removeProduct(Product product) {
+
+    }
+
 }

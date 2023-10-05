@@ -1,26 +1,20 @@
 package com.shopping.lab3.service;
 
-import com.shopping.lab3.domain.Customer;
-import com.shopping.lab3.repository.CustomerRepository;
+import com.shopping.lab3.domain.User;
+import com.shopping.lab3.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class UserService {
-    private final CustomerRepository customerRepository;
+    @Autowired
+    UserRepository userRepository;
 
-    public UserService(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
+    public User login(User user) {
+        return null;
     }
 
-    public Customer createUser(Customer customer) {
-        return customerRepository.save(customer);
+    public User register(User user) {
+        return null;
     }
-
-    public List<Customer> getAllUsers() {
-        return customerRepository.findAll();
-    }
-
-    // other service methods
 }
